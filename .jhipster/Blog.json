@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "author",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "body",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170516184929",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "blog",
+    "pagination": "pagination"
+}

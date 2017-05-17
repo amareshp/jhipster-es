@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span data-translate="jhipsteresApp.blog.detail.title">Blog</span> {{vm.blog.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row jh-entity-details">
+        <dt><span data-translate="jhipsteresApp.blog.author">Author</span></dt>
+        <dd>
+            <span>{{vm.blog.author}}</span>
+        </dd>
+        <dt><span data-translate="jhipsteresApp.blog.title">Title</span></dt>
+        <dd>
+            <span>{{vm.blog.title}}</span>
+        </dd>
+        <dt><span data-translate="jhipsteresApp.blog.body">Body</span></dt>
+        <dd>
+            <span>{{vm.blog.body}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="blog-detail.edit({id:vm.blog.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
